@@ -12,7 +12,7 @@ app.get('/mars', (req, res) => {
 
 
 // 👇️ Specify port number
-const port = 3456;
+const port = 3210;
 
 app.listen(port, () => {
   console.log(`This app is listerning at the port : ${port}
