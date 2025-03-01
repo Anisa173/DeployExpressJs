@@ -15,7 +15,7 @@ app.get('/mars', (req, res) => {
 const port = 3456;
 
 app.listen(port, () => {
-  console.log(`Example app listening on port ${port}
+  console.log(`This app is listerning at the port : ${port}
   visit: http://localhost:${port}`);
 });
 
