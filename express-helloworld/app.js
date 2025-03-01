@@ -1,11 +1,24 @@
-var express = require('express');
-app = express();
+import express from 'express';
 
-app.get('/', function (req, res) {
-  res.send('Hello World!\n');
+const app = express();
+
+app.get('/', (req, res) => {
+  res.send('Hello World!');
 });
 
-app.listen(8080, function () {
-  console.log('Example app listening on port 8080!');
+app.get('/mars', (req, res) => {
+  res.send('It is one Mars.Hello MARS!');
 });
+
+
+// 👇️ Specify port number
+const port = 3456;
+
+app.listen(port, () => {
+  console.log(`Example app listening on port ${port}
+  visit: http://localhost:${port}`);
+});
+
+
+
 

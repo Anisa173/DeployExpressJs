@@ -1,4 +1,5 @@
 {
+"type": "module",
   "name": "express-helloworld",
   "version": "1.0.0",
   "description": "A simple hello world Express/NodeJS application",
@@ -14,6 +15,7 @@
   ],
   "license": "ISC",
   "dependencies": {
-    "express": "^4.17.1"
-  }
+    "express": "^4.21.2"
+  },
+  "author": ""
 }
