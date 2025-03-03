@@ -12,6 +12,20 @@ app.get('/', function (req, res) {
 
 });
 
-app.listen(8080, function () {
-  console.log('Server listening on port 8080...');
+
+app.get('/mars', (req, res) => {
+  res.send('It is one Mars.Hello MARS!');
 });
+
+
+// 👇️ Specify port number
+const port = 8080 ;
+
+app.listen(port, () => {
+  console.log(`Server is listerning on port  ${port}
+  visit: http://localhost:${port}`);
+});
+
+
+
+
