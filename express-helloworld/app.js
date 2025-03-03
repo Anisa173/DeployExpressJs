@@ -1,9 +1,9 @@
-import express from 'express';
 
-const app = express();
+var express = require('express');
+app = express();
 
-app.get('/', (req, res) => {
-  res.send('Hello World!');
+app.get('/', function (req, res) {
+  res.send('Hello World!\n');
 });
 
 app.get('/mars', (req, res) => {
